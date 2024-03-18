@@ -57,3 +57,19 @@
   font-size: 20px;
   text-decoration: none;
 }
+
+.navigation>li>a:hover {
+  color: crimson;
+  transition: all .3s ease-in-out;
+}
+
+.active {
+  background-color: crimson;
+  border-radius: 3px;
+  color: white;
+  padding: 15px;
+}
+
+.active:hover {
+  color: white !important;
+}
