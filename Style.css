@@ -58,6 +58,16 @@ header {
   position: absolute;
   font-size: 5em;
   color: #f9f9f9;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #text {
+    font-size: 3.5em;
+  }
 }
 
 .welcome img {
@@ -68,6 +78,7 @@ header {
   height: 100%;
   object-fit: cover;
   pointer-events: none;
+  max-width: 100%;
 }
 
 .about {
@@ -113,6 +124,25 @@ header {
   height: 400px;
   object-fit: cover;
   pointer-events: none;
+}
+
+@media screen and (max-width: 1128px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .table-1,
+  .table-2,
+  .table-3,
+  .table-4 {
+    padding: 20px;
+    text-align: justify;
+  }
+
+  .grid-container img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 footer {
